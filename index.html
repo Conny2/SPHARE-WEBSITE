@@ -3,47 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPARE CARE SLUTION</title>
+    <title>SPACE SOLUTION</title>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div>
         <title>SPHARE CARE SOLUTION</title>
-    
+    </div>
     </head>
     
     <body>
-        <h1>A BOUT US</h1>
-        <img src="logo.jpg" alt="">
+        <div class="container">
+
+        </div>
+        <div class="about_us_input">
+</div>
+      <div>  
+<h1>A BOUT US</h1>
+</div>
+<div class="background-div">
+        <img src="logo.jpg" alt="my photos">
     <p>Sphere care Solution  is a Registered  CQC  Dormiciliary care company which is at the forefront in supply of
      healthcare staff and care services and is adoptive with the industry of health  by provinding an Agilin,Dependable 
      and proffessional parternship between our service users and the staffs, Sphere Care Solution was started in Mays
      2023, since then we  have won the heart of many service users and there family from the services provide.</p>
-            <p><h4><b> OUR VISION</b></h4> 
-                <P>To be a care company provider where those we care for and those who work with us feel valued, loved and safe </P>
-                <h5><b>OUR MISSION</b></h5>
-                <P>To be guided by sheer determination to offer the highest levels of service that surpasses our clients’ expectations and leaves a permanent smile on their faces.</P>
-                <h6><b>OUR VALUES</b></h6>
-                </p>Honesty, Integrity, Reliability, Professionalism and Respect for all. These are the core principles that underpins everything we do at LOVE AND CARE LTD.</p>
+    </div> 
+    <div class="kiss">
+        <p><h4><b> OUR VISION</b></h4> 
+        </div>  
+<div class="bibo">
+<P>To be a care company provider where those we care for and those who work with us feel valued, loved and safe </P>
+</div>
+<div class="pipo">
+<P<h5><b>OUR MISSION</b></h5>
+</div>
+<div class="tally"> 
+<p>To be guided by sheer determination to offer the highest levels of service that surpasses our clients’ expectations and leaves a permanent smile on their faces.</P>
+            </div> 
+        <div class="value">
+<h6><b>OUR VALUES</b></h6>
+</div>  
+    <div class="billy"            
+</p>Honesty, Integrity, Reliability, Professionalism and Respect for all. These are the core principles that underpins everything we do at LOVE AND CARE LTD.</p>
+            </div>  
+        </div>
                 
-                <h7><b>>OUR CONTACT DETAILS</b></h7>
-                <li>phone number:0703664857</li>
+        <div class="corny">
+        <h7><b>>OUR CONTACT DETAILS</b></h7>
+    </div>
+           <div class="manu">
+            
+    <li>phone number:0703664857</li>
                 <li>Email adress:at@spherecaresln.co.uk</li>
                 <li>Facebook account:Sphere Care Solution</li>
+</div>
                 <h1>REGISTRATION FORMS</h1>
-                <Forms>
+                <Forms id="myform">
                     <label><li> Full Name</li></label>
-                    <input name="name"> 
+                    <input name="name" id="name"require/>
                     <label><li>Email Address</li></label>
-                    <input name="email">
+                    <input name="email" id="email" required/>
+                    <button type="submit">submit</button>
+                    <div id="errorMessage" style="color: red"></div>
                     <button><li>Sign up</li></button>
                     <label><li> Phone Number</li></label>
-                    <input number="Number">
+                    <input number="Number" id="number"required/>
                     <label><li>password</li></label>
-                    <input passpword="password">
+                    <input passpword="password" id="passpword"required/>
                     <button><li>Submit <form action=""></form></li></button>
+                    <div id="errorMessage" style="color: red"></div>
                     
                 </Forms>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", function(event) {
+                        event.preventDefault(); // Prevent form submission
+                    
+                        let isValid = true;
+                        const errorMessage = document.getElementById("errorMessage");
+                        errorMessage.textContent = ""; // Clear previous errors
+                    
+                        // Validate name
+                        const name = document.getElementById("name").value;
+                        if (name.length < 3) {
+                            isValid = false;
+                            errorMessage.textContent += "Name must be at least 3 characters long.\n";
+                        }    
+                     // Validate email
+    const email = document.getElementById("email").value;
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        isValid = false;
+        errorMessage.textContent += "Please enter a valid email address.\n";
+    }
+
+    // If valid, submit the form
+    if (isValid) {
+        alert("Form submitted successfully!");
+        // Here you can submit the form or do something with the data
+
+
+    }
+});
+</script>
                 
     
             <h2>OUR TEAM MEMBERS</h2>
@@ -90,7 +153,7 @@
     
     <li><b>END OF LIFE CARE</b></li>
     <a href="https://www.youtube.com/watch?v=rymZI7Vo8kU">End of life</a>
-    <P>Each one of us need a good and well suportive team when are under palliative care, End of life comes with diffrent ways of care and support, here in LOVE AND CARE LTD, we take intiative and give our service users the good care they need torwards there End of life</P>
+    <P>Each one of us need a good and well supportive team,we offer palliative care service, as we all know End of life comes with different ways of care and support, here in LOVE AND CARE LTD, we take intiative and give our service users the good care they need torwards there End of life</P>
     
     <li><b>SUPORT ACCOMODATION</b></li>
     <a href="https://www.youtube.com/watch?v=_TtBmTlGgIw">Support accomodation</a>

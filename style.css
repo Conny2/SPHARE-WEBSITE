@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif}
+
+.container{
+display:flex;
+flex-direction: column;
+width:30%;
+margin:auto;
+background-color: hsl(156, 76%, 37%);
+color:rgb(105, 156, 23);}
+
+.about_us_input{
+    display:flex;
+    justify-content:center;
+    width:40%;
+background-color: #a31776;
+        color:  #840c0c;  
+}
+.background-div{
+    width:80%;
+    background-image: url('logo.jpg');
+    background-size: cover; 
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Allows for centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    color: rgb(24, 23, 26); }
+
+   .pipo{
+        display:flex;
+        flex-direction: column;
+        width:30%;
+        margin:auto;
+        background-color: hsl(156, 77%, 43%);
+        color:rgb(7, 7, 7);}
+
+    .kiss{
+        display:flex;
+        justify-content:center;
+        width:40%;
+    background-color: hsl(320, 25%, 91%);
+            color:  hsl(165, 63%, 6%);
+    }
+ .tally{
+    display:flex;
+        flex-direction: column;
+        width:30%;
+        margin:auto;
+        background-color: hsl(160, 12%, 86%);
+        color:#14075c;}
+
+        .billy{
+            display:flex;
+        justify-content:center;
+        width:40%;
+    background-color: hsl(156, 89%, 55%);
+            color:  hsl(0, 2%, 91%);
+        }
+.value{
+        display:flex;
+        justify-content:center;
+        width:40%;
+    background-color: #0c0e0d;
+            color:  hsl(0, 2%, 91%);
+        }
+
+        .bibo{
+            display:flex;
+            justify-content:center;
+            width:40%;
+        background-color: #100e0f;
+                color:  hsl(0, 2%, 91%);
+            }    
+
+    .corny{
+        display:flex;
+        justify-content: center;
+        width:45%;
+        background-color:#14075c
+        color:hsl(0, 2%, 91%);
+    }
+
+    .manu{
+        display:flex;
+        justify-content: center;
+        width:45%;
+        background-color:#14075c
+        color: red);
+    }
